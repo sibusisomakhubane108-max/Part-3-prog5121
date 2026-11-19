@@ -1,0 +1,10 @@
+Synced message choices with StoredMessages: Updated SentMessage(int choice) 
+disregarding
+ messages also push those messages into StoredMessages.
+Synced storeMessage(): Updated storeMessage() to record stored messages in StoredMessages and write them to JSON.
+Synced state reset and JSON loading: Updated resetState() and loadStoredMessagesFromJson() so StoredMessages stays aligned when state resets or JSON data is loaded.
+
+Delegated stored-message lookups, reports, and deletion: 
+Routed displaySenderAndRecipient(), displayLongestStoredMessage(), searchMessageID(...), 
+searchStoredByRecipient(...), displayStoredReport(), searchByRecipient(...), and deleteByMessageHash(...) 
+through StoredMessages (while also keeping QuickChat's stored list and JSON updated on deletion).
