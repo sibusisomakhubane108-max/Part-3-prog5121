@@ -1,0 +1,5 @@
+Dynamic parallel arrays: Set up dynamic arrays/collections to track sent messages, disregarded messages, stored messages, message IDs, and message hashes without hard-coding.
+
+JSON persistence: Handled saving and loading stored messages to/from JSON so stored messages persist across runs.
+
+Part 3 operations: Implemented the methods used by the Stored Messages menu and tests—such as displaying sender/recipient, finding the longest stored message, searching by message ID or recipient, deleting by message hash, and generating the stored message report.
