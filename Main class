@@ -1,0 +1,17 @@
+Loaded stored messages at startup: Called StoredMessages.loadStoredMessagesFromJson() right after setting the sender so saved JSON messages load when the app starts.
+
+Wired option 4 ("Stored Messages") to StoredMessages: Updated the STORED MESSAGES MENU (1–7) to call StoredMessages methods instead of QuickChat:
+
+1 → StoredMessages.displaySenderAndRecipient()
+
+2 → StoredMessages.displayLongestStoredMessage()
+
+3 → StoredMessages.searchMessageID(searchId)
+
+4 → StoredMessages.searchStoredByRecipient(searchStoredRecip)
+
+5 → StoredMessages.deleteByMessageHash(searchHash)
+
+6 → StoredMessages.displayStoredReport()
+
+7 → StoredMessages.searchByRecipient(searchAllRecip)
